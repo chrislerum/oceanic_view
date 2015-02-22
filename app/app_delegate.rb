@@ -1,6 +1,6 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    rootViewController = UIViewController.alloc.init
+    rootViewController = RootViewController.new
     rootViewController.title = 'oceanic_view'
     rootViewController.view.backgroundColor = UIColor.whiteColor
 

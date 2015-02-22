@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dbt (1.1.5)
+    motion-kit (0.17.0)
+      dbt (~> 1.1.5)
+    rake (10.4.2)
+    sugarcube (3.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-kit
+  rake
+  sugarcube
