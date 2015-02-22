@@ -1,4 +1,4 @@
-class RootLayout < MK::Layout
+class RevealLayout < MK::Layout
 
   view :button
 
@@ -8,7 +8,7 @@ class RootLayout < MK::Layout
   end
 
   def button_style
-    title 'Place your fingertip on the back camera and tap here.'
+    title 'Tap to see what you need to hear today.'
     background_color '#ff0000'.uicolor
 
     constraints do

@@ -1,14 +1,14 @@
-class RootViewController < UIViewController
+class RevealViewController < UIViewController
 
   def loadView
-    @layout = RootLayout.new
+    @layout = RevealLayout.new
     self.view = @layout.view
     @button = @layout.button
   end
 
   def viewDidLoad
     @button.on(:touch) do
-      self.navigationController.push ReadingViewController.new
+      self.navigationController.push QuoteViewController.new
     end
   end
 end

@@ -1,8 +1,7 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
     rootViewController = RootViewController.new
-    rootViewController.title = 'oceanic_view'
-    rootViewController.view.backgroundColor = UIColor.whiteColor
+    rootViewController.title = 'Oceanic View'
 
     navigationController = UINavigationController.alloc.initWithRootViewController(rootViewController)
 
