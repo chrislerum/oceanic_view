@@ -1,15 +1,18 @@
 class ReadingLayout < MK::Layout
 
-  view :button
+  view :label
 
   def layout
     background_color '#ffffff'.uicolor
-    add UIButton, :button
+    add UILabel, :label
   end
 
-  def button_style
-    title 'reading...'
-    background_color '#ff0000'.uicolor
+  def label_style
+    numberOfLines 0
+    text 'reading...'
+    text_alignment NSTextAlignmentCenter
+    text_color '#ffffff'.uicolor
+    background_color '#C09425'.uicolor
 
     constraints do
       left.equals(:superview).plus 20

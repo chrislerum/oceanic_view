@@ -7,6 +7,7 @@ class RevealViewController < UIViewController
   end
 
   def viewDidLoad
+    sleep 1
     @button.on(:touch) do
       self.navigationController.push QuoteViewController.new
     end

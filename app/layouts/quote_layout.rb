@@ -1,16 +1,16 @@
-class RootLayout < MK::Layout
+class QuoteLayout < MK::Layout
 
-  view :button
+  view :label
 
   def layout
     background_color '#ffffff'.uicolor
-    add UIButton, :button
+    add UILabel, :label
   end
 
-  def button_style
-    titleLabel.numberOfLines = 0
-    title 'Place your fingertip on the back camera and tap here.'
-    background_color '#D32323'.uicolor
+  def label_style
+    numberOfLines = 0
+    text 'quote'
+    background_color '#5DD8E7'.uicolor
 
     constraints do
       left.equals(:superview).plus 20

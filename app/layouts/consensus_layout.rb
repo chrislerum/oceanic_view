@@ -1,15 +1,18 @@
 class ConsensusLayout < MK::Layout
 
-  view :button
+  view :label
 
   def layout
     background_color '#ffffff'.uicolor
-    add UIButton, :button
+    add UILabel, :label
   end
 
-  def button_style
-    title 'coming to a consensus...'
-    background_color '#ff0000'.uicolor
+  def label_style
+    numberOfLines = 0
+    text 'coming to a consensus...'
+    text_alignment NSTextAlignmentCenter
+    text_color '#ffffff'.uicolor
+    background_color '#0B0E0D'.uicolor
 
     constraints do
       left.equals(:superview).plus 20
