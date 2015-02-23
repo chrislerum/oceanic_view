@@ -9,6 +9,7 @@ class RootLayout < MK::Layout
 
   def button_style
     titleLabel.numberOfLines = 0
+    titleLabel.textAlignment = NSTextAlignmentCenter
     title 'Place your fingertip on the back camera and tap here.'
     background_color '#D32323'.uicolor
 

@@ -8,7 +8,7 @@ class ConsensusLayout < MK::Layout
   end
 
   def label_style
-    numberOfLines = 0
+    numberOfLines 0
     text 'coming to a consensus...'
     text_alignment NSTextAlignmentCenter
     text_color '#ffffff'.uicolor

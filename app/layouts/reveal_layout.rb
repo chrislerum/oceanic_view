@@ -10,7 +10,7 @@ class RevealLayout < MK::Layout
   end
 
   def reminder_style
-    numberOfLines = 0
+    numberOfLines 0
     text_alignment NSTextAlignmentCenter
     text_color '#ffffff'.uicolor
     text "Remember: this is for your eyes only. Tell no one."

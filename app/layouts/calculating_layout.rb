@@ -8,7 +8,7 @@ class CalculatingLayout < MK::Layout
   end
 
   def label_style
-    numberOfLines = 0
+    numberOfLines 0
     text 'calculating...'
     text_alignment NSTextAlignmentCenter
     text_color '#ffffff'.uicolor
