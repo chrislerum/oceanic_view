@@ -4,12 +4,13 @@ class QuoteViewController < UIViewController
     @layout = QuoteLayout.new
     self.view = @layout.view
 
-    self.navigationController.navigationBar.hidden = false
-    self.navigationItem.leftBarButtonItem = UIBarButtonItem.alloc.initWithTitle("Back", style: UIBarButtonItemStyleBordered, target:self, action:('handleBack:'))
+    @button = @layout.button
   end
 
-  def handleBack(sender)
-    self.navigationController.popToRootViewControllerAnimated(true)
+  def viewDidLoad
+    @button.on(:touch) do
+      self.navigationController.popToRootViewControllerAnimated(true)
+    end
   end
 
   def prefersStatusBarHidden

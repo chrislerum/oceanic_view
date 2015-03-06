@@ -4,6 +4,7 @@ class RootViewController < UIViewController
     @layout = RootLayout.new
     self.view = @layout.view
     @button = @layout.button
+    self.navigationController.navigationBar.hidden = true
   end
 
   def viewDidLoad
