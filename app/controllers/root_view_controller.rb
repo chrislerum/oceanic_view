@@ -11,4 +11,8 @@ class RootViewController < UIViewController
       self.navigationController.push ReadingViewController.new
     end
   end
+
+  def prefersStatusBarHidden
+    true
+  end
 end

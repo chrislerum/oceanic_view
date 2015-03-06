@@ -7,5 +7,10 @@ class ReadingViewController < UIViewController
 
   def viewDidLoad
     self.navigationController.push CalculatingViewController.new
+    self.navigationController.navigationBar.hidden = true
+  end
+
+  def prefersStatusBarHidden
+    true
   end
 end

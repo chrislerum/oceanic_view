@@ -12,4 +12,8 @@ class RevealViewController < UIViewController
       self.navigationController.push QuoteViewController.new
     end
   end
+
+  def prefersStatusBarHidden
+    true
+  end
 end

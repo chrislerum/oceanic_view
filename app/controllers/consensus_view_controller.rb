@@ -9,4 +9,8 @@ class ConsensusViewController < UIViewController
     self.navigationController.push RevealViewController.new
     sleep 1
   end
+
+  def prefersStatusBarHidden
+    true
+  end
 end

@@ -9,4 +9,8 @@ class CalculatingViewController < UIViewController
     self.navigationController.push ConsensusViewController.new
     sleep 1
   end
+
+  def prefersStatusBarHidden
+    true
+  end
 end
