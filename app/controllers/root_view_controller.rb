@@ -8,7 +8,7 @@ class RootViewController < UIViewController
 
   def viewDidLoad
     @button.on(:touch) do
-      self.navigationController.push ReadingViewController.new
+      self.navigationController.push QuoteViewController.new
     end
   end
 

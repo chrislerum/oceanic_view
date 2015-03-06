@@ -22,7 +22,7 @@ class RootLayout < MK::Layout
   def button_style
     titleLabel.numberOfLines = 0
     titleLabel.textAlignment = NSTextAlignmentCenter
-    title 'Place your fingertip on the back camera and tap here.'
+    title 'Tap for your inspirational quote of the day'
 
     constraints do
       left.equals(:background_label).plus 10
